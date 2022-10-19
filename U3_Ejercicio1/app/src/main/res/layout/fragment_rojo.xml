@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentRojo"
+    android:background="#9A1D1D"
+    tools:context=".RojoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/buttonRojo"
+        android:layout_width="172dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:text="-1" />
+
+</FrameLayout>
