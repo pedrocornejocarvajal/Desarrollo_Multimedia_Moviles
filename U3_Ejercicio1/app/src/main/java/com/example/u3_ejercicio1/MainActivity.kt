@@ -37,8 +37,6 @@ class MainActivity : AppCompatActivity(), ComunicadorInterfaces {
 
         }
 
-
-
     override fun onClickButtonRestar() {
         val textView:TextView=findViewById(R.id.resultado)
         textView.text = (Integer.parseInt(textView.text.toString())-1).toString()
