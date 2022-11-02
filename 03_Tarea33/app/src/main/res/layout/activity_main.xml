@@ -7,6 +7,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/botonHulk"
+        android:layout_width="151dp"
+        android:layout_height="165dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="148dp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@color/verde_apagado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/hulk"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/botonThor"
+        android:layout_width="151dp"
+        android:layout_height="165dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="@color/amarillo_apagado"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/thor"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/botonCapi"
+        android:layout_width="151dp"
+        android:layout_height="165dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="328dp"
+        android:backgroundTint="@color/azul_apagado"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/capi"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <TextView
         android:id="@+id/textoTitulo2"
         android:layout_width="149dp"
@@ -22,7 +61,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textoTitulo3"
+        android:id="@+id/npuntuacion"
         android:layout_width="61dp"
         android:layout_height="46dp"
         android:layout_marginEnd="92dp"
@@ -49,47 +88,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/botonIronMan"
-        android:layout_width="104dp"
-        android:layout_height="132dp"
-        android:layout_marginEnd="224dp"
-        android:layout_marginBottom="372dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ironman" />
-
-    <ImageButton
-        android:id="@+id/botonCapi"
-        android:layout_width="104dp"
-        android:layout_height="132dp"
-        android:layout_marginEnd="224dp"
-        android:layout_marginBottom="216dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/capi" />
-
-    <ImageButton
-        android:id="@+id/botonThor"
-        android:layout_width="104dp"
-        android:layout_height="132dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="372dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/thor" />
-
-    <ImageButton
-        android:id="@+id/BotonHulk"
-        android:layout_width="104dp"
-        android:layout_height="132dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="216dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/hulk" />
-
     <Button
         android:id="@+id/botonPlay"
         android:layout_width="135dp"
@@ -102,5 +100,18 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botonIronman"
+        android:layout_width="151dp"
+        android:layout_height="165dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="328dp"
+        android:backgroundTint="@color/rojo_apagado"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ironman"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
