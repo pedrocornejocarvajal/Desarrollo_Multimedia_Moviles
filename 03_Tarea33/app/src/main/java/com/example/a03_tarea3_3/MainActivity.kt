@@ -61,22 +61,22 @@ class MainActivity : AppCompatActivity() {
 
         //Botón azul
         findViewById<ImageButton>(R.id.botonCapi).setOnClickListener {
-            comprobar("azul")
+            comprobar(R.color.azul_encendido.toString())
         }
 
         //Botón verde
         findViewById<ImageButton>(R.id.botonHulk).setOnClickListener {
-            comprobar("verde")
+            comprobar(R.color.verde_encendido.toString())
         }
 
         //Botón amarillo
         findViewById<ImageButton>(R.id.botonThor).setOnClickListener {
-            comprobar("amarillo")
+            comprobar(R.color.amarillo_encendido.toString())
         }
 
         //Botón rojo
         findViewById<ImageButton>(R.id.botonIronman).setOnClickListener {
-            comprobar("rojo")
+            comprobar(R.color.rojo_encendido.toString())
         }
     }
 

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Rock Paper Scissors"
+        android:textColor="@color/black"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="632dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="Computer"
+        android:textColor="@color/teal_200"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/computer_move_img"
+        android:layout_width="81dp"
+        android:layout_height="98dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="388dp"
+        android:src="@drawable/vs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/winner_tv"
+        android:layout_width="206dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="524dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text=" "
+        android:textColor="#F11010"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/user_move_img"
+        android:layout_width="125dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="392dp"
+        android:src="@drawable/vs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="179dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center_horizontal"
+        android:text="Player"
+        android:textColor="@color/teal_200"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="23dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="116dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/restart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#ED7716"
+        android:text="Restart Game"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/rock_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="256dp"
+        android:src="@drawable/piedra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/scissors_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="256dp"
+        android:src="@drawable/tijera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/paper_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="256dp"
+        android:src="@drawable/papel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="192dp"
+        android:paddingLeft="10dp"
+        android:text="Computer Score"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="148dp"
+        android:paddingLeft="10dp"
+        android:text="Player Score"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/player_score"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="152dp"
+        android:paddingLeft="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/computer_score"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="184dp"
+        android:paddingLeft="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
