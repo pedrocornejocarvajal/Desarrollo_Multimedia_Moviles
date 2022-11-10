@@ -25,7 +25,8 @@
             android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@+id/btnAddTask"
             android:hint="añade una tarea"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/black"/>
         <Button
             android:id="@+id/btnAddTask"
             android:layout_width="wrap_content"

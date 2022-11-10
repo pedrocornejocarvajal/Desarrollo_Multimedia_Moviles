@@ -23,11 +23,11 @@ class MainActivity : AppCompatActivity() {
         tasks = ArrayList()
         getTasks()
         findViewById<Button>(R.id.btnAddTask).setOnClickListener {
-                addTask(TaskEntity(name = findViewById<EditText>(R.id.etTask).text.toString()))
+            addTask(TaskEntity(name = findViewById<EditText>(R.id.etTask).text.toString()))
         }
     }
 
-    fun getTasks()= runBlocking{
+    fun getTasks() = runBlocking {
         launch {
             tasks = MisNotasApp.database.TaskDao().getAllTasks()
             setUpRecyclerView(tasks)
@@ -35,22 +35,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setUpRecyclerView(tasks: List<TaskEntity>) {
-        adapter = TaskAdapter(tasks, { updateTask(it) }, {deleteTask(it)})
+        adapter = TaskAdapter(tasks, { updateTask(it) }, { deleteTask(it) })
         recyclerView = findViewById(R.id.rvTask)
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
     }
 
-    fun updateTask(task: TaskEntity) =runBlocking {
+    fun updateTask(task: TaskEntity) = runBlocking {
         launch {
             task.isDone = !task.isDone
             MisNotasApp.database.TaskDao().updateTask(task)
         }
     }
 
-    fun deleteTask(task: TaskEntity)=runBlocking{
-        launch{
+    fun deleteTask(task: TaskEntity) = runBlocking {
+        launch {
             val position = tasks.indexOf(task)
             MisNotasApp.database.TaskDao().deleteTask(task)
             tasks.remove(task)
@@ -58,25 +58,24 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun clearFocus(){
+    fun clearFocus() {
         findViewById<EditText>(R.id.etTask).setText("")
     }
 
-
     fun Context.hideKeyboard() {
-        val inputMethodManager =
-            getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
-        inputMethodManager.hideSoftInputFromWindow(currentFocus.windowToken, 0)
+        val inputMethodManager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
 
     }
 
-    fun addTask(task:TaskEntity)= runBlocking{
+    fun addTask(task: TaskEntity) = runBlocking {
         launch {
-            val id = MisNotasApp.database.taskDao().addTask(task)
-            val recoveryTask = MisNotasApp.database.taskDao().getTaskById(id)
+            val id = MisNotasApp.database.TaskDao().addTask(task)
+            val recoveryTask = MisNotasApp.database.TaskDao().getTaskById(id)
             tasks.add(recoveryTask)
             adapter.notifyItemInserted(tasks.size)
             clearFocus()
             hideKeyboard()
         }
     }
+}
