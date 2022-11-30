@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:paddingTop="30dp"
+    android:background="@color/color_principal"
+    android:orientation="horizontal"
+    android:textAlignment="center">
+
+    <ImageButton
+        android:id="@+id/boton_inicio"
+        android:layout_width="50dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/color_principal"
+        android:contextClickable="true"
+        android:onClick="cerrarNavView"
+        android:paddingTop="10dp"
+        android:paddingEnd="-8dp"
+        android:paddingBottom="12dp"
+        android:rotation="180"
+        android:scaleType="centerInside"
+        android:src="@drawable/back_ico"
+        android:transitionName="@string/meu_drawer_close" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:paddingTop="28dp"
+        android:text="MI PRIMERA APP"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
